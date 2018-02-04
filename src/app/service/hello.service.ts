@@ -8,7 +8,7 @@ export class HelloService {
   constructor(private http: Http) { }
 
   getWelcomeMessage() {
-    return this.http.get('http://localhost:8000/api/v0.1/greeting').map(
+    return this.http.get('http://localhost:8000/api/greeting').map(
       (response: Response) => {
         const welcome = response.json();
         return welcome;

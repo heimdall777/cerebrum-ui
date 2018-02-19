@@ -11,6 +11,7 @@ export class HelloService {
     return this.http.get('http://localhost:8000/api/greeting').map(
       (response: Response) => {
         const welcome = response.json();
+        console.log(welcome);
         return welcome;
       }
     );

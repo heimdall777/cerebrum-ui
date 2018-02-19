@@ -10,13 +10,13 @@ import { HelloService } from './service/hello.service';
 export class AppComponent implements OnInit {
   helloMessage = '';
 
-  constructor(private helloService: HelloService) {}
+  constructor(private helloService: HelloService) { }
 
   ngOnInit() {
-this.helloService.getWelcomeMessage().subscribe((welcome: any) => {
-  this.helloMessage = welcome.helloMessage;
-  console.log(welcome);
-});
+    this.helloService.getWelcomeMessage().subscribe((welcome: any) => {
+      this.helloMessage = welcome.helloMessage;
+      console.log(welcome);
+    });
   }
 
 }

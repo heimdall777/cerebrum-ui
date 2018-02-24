@@ -43,11 +43,6 @@ let baseRequestOptions: BaseRequestOptions;
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have empty helloMessage`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.helloMessage).toEqual('');
-  }));
   it('should render helloMessage in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
